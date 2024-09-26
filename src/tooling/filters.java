@@ -6,7 +6,7 @@ public class filters {
 
         for (int i = 0; i < signal.length; i++) {
             for (int j = 0; j < signal[0].length; j++) {
-                if (signal[i][j] > .6) {
+                if (signal[i][j] > .8) {
                     filtered[i][j] = 1;
                 } else {
                     filtered[i][j] = 0;
@@ -45,5 +45,13 @@ public class filters {
             }
         }
         return reduced;
+    }
+
+    public static double[][] filterObjects(double[][] filtered) {
+        for (int i = 0; i < filtered.length; i++) {
+            for (int j = 0; j < filtered[0].length; j++) {
+
+            }
+        }
     }
 }

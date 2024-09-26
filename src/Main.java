@@ -12,12 +12,12 @@ public class Main {
         ArrayList<double[][]> images;
         double[][] traceImage;
 
-        images = ImageHandling.processImageDirectory("/Users/rh-ws1/Documents/01-ImageSeries");
+        images = ImageHandling.processImageDirectory("/Users/rh-ws1/Desktop/02-GolfShotTest");
 
         traceImage = ImageTooling.createTrace(images);
 
         try {
-            ImageHandling.saveImage2dArray(traceImage, "/Users/rh-ws1/Documents/01-ImageSeries/trace.png");
+            ImageHandling.saveImage2dArray(traceImage, "/Users/rh-ws1/Desktop/02-GolfShotTest/trace.png");
         } catch (IOException e) {
             e.printStackTrace();
         }
